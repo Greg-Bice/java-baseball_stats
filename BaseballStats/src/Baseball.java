@@ -9,7 +9,7 @@ public class Baseball {
 		System.out.println( "Quiz 1: Baseball Stats\n" );
 		
 		System.out.println( "Player Name:" );
-		String name = input.next();
+		String name = input.nextLine();
 		//name = ( !name.isEmpty() ) ? name : "Babe Ruth";
 		
 		int abs = QueryAssign( "At Bats (ABS):", 8399 );
@@ -21,9 +21,6 @@ public class Baseball {
 		int wlk = QueryAssign( "Walks (BB):", 2062 );
 		int hbp = QueryAssign( "Hits by Pitch (HBP):", 43 );
 		int scf = QueryAssign( "Sacrificial Flies (SCF):", 1 );
-		
-		System.out.print( abs );
-		System.out.print( hts );
 		
 		Stats player = new Stats( name, abs, hts, dbl, trp, hmr, rns, wlk, hbp, scf );
 		player.PrintStats();

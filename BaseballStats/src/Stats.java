@@ -8,28 +8,8 @@ public class Stats {
 	
 	// Java needs line terminators (;) unlike Lua
 	public Stats( String name, int abs, int hts, int dbl, int trp, int hmr, int rns, int wlk, int hbp, int scf ) {
-	
-		// Super class not needed since this is not a subclass of anything.
-		// super();
-		
-		// Not the cleanest but better than a bunch of overload methods
-	/*
-		playerName = ( name.length() > 0 ) ? name : "Babe Ruth";
-		ABS = ( abs == (int) abs ) ? abs : 8399;
-		HTS = ( hts == (int) hts ) ? hts : 2873;
-		DBL = ( dbl == (int) dbl ) ? dbl : 506;
-		TRP = ( trp == (int) trp ) ? trp : 136;
-		HMR = ( hmr == (int) hmr ) ? hmr : 714;
-		RNS = ( rns == (int) rns ) ? rns : 2174;
-		WLK = ( wlk == (int) wlk ) ? wlk : 2062;
-		
-		
-		HBP = ( HBP == (int) HBP ) ? HBP : 43;
-		SCF = ( SCF == (int) SCF ) ? SCF : 0;
-	*/
-		
+			
 		// Defaulting will be in the query.
-		
 		this.playerName = name;
 		
 		// Without casting, the methods try to do integer maths
